@@ -1,0 +1,255 @@
+/**
+ * Resets and stuff
+ */
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: Raleway, sans-serif;
+	line-height: 1.15;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	color: #333;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main {
+	display: block;
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ * Then Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+	font-weight: inherit;
+}
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+	font-size: 80%;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+	border-style: none;
+}
+
+/**
+ * Headers
+ */
+h1, h2, h3, h4, h5, h6 {
+	font-family: Lora, serif;
+	margin: 0 0 1em;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+/**
+ * Links
+ */
+a {
+	background-color: transparent;
+	-webkit-text-decoration-skip: objects;
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+
+/**
+ * Base Typography
+ */
+p {
+	line-height: 1.5;
+}
+
+/**
+ * Header
+ */
+.page-header {
+	width: 100%;
+	background: #bd0000;
+	color: #fff;
+	text-align: center;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+.main-header {
+	font-weight: normal;
+	font-size: 1.5em;
+	margin-bottom: .5em;
+}
+
+.main-header:before,
+.main-header:after {
+	color: #0057b8;
+}
+
+.main-header:after {
+	content: '\2605\00A0\00A0\2605\00A0\00A0\2605';
+	display: block;
+	margin-top: .5em;
+}
+
+.main-header .accent {
+	color: #0057b8;
+	font-weight: bold;
+}
+
+@media (min-width: 17.5em) {
+	.main-header {
+		font-size: 2em;
+		margin-bottom: .6em;
+	}
+	.main-header:after {
+		content: '\2605\00A0\00A0\2605\00A0\00A0\2605\00A0\00A0\2605';
+	}
+}
+
+@media (min-width: 30em) {
+	.main-header:before {
+		content: '\2605';
+		margin-right: 1em;
+	}
+
+	.main-header:after {
+		content: '\2605';
+		display: inline;
+		margin-top: 0;
+		margin-left: 1em;
+	}
+}
+
+@media (min-width: 35em) {
+	.main-header:before {
+		content: '\2605\00A0\00A0\2605';
+	}
+
+	.main-header:after {
+		content: '\2605\00A0\00A0\2605';
+	}
+}
+
+@media (min-width: 40em) {
+	.main-header:before {
+		content: '\2605\00A0\00A0\2605\00A0\00A0\2605';
+	}
+
+	.main-header:after {
+		content: '\2605\00A0\00A0\2605\00A0\00A0\2605';
+	}
+}
+
+@media (min-width: 47.5em) {
+	.main-header {
+		font-size: 2.5em;
+	}
+	.sub-header {
+		font-size: 1.5em;
+	}
+}
+
+/**
+ * Content
+ */
+.introduction,
+.content-navigation,
+.content {
+	padding: 1em;
+	max-width: 50em;
+	margin: 0 auto;
+}
+
+.content-section {
+	padding: 1em 0;
+	border-bottom: 1px solid #bd0000;
+	border-top: 1px solid #aaa;
+}
+
+.content-section:first-child {
+	border-top: none;
+}
+
+.introduction {
+	text-align: center;
+}
+
+.media img {
+	width: 100%;
+}
+
+@media (min-width: 35em) {
+	.introduction {
+		overflow: hidden;
+	}
+	.intro-content {
+		float: right;
+		width: 70%;
+		padding: 1em;
+	}
+	.media {
+		float: left;
+		width: 30%;
+	}
+}
+
+.content-navigation {
+	background: #0057b8;
+}
+
+.content-navigation a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	display: block;
+	padding: .5em;
+}
+
+.content-navigation a:before {
+	content: '\2605';
+	margin-right: .5em;
+}
+
+.content-navigation a:hover {
+	color: #bd0000;
+	text-shadow: 1px 1px 3px #ccc;
+}
+
+@media (min-width: 35em) {
+	.content-navigation {
+		display: flex;
+		justify-content: center;
+	}
+	.content-navigation a {
+		margin-right: 1em;
+	}
+}
+
+iframe {
+	max-width: 100%;
+}
