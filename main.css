@@ -76,9 +76,21 @@ a {
 
 a:active,
 a:hover {
-  outline-width: 0;
+	outline-width: 0;
 }
 
+button,
+.button {
+	cursor: pointer;
+	text-decoration: none;
+	background: #0057b8;
+	padding: .5em;
+	color: #fff;
+	border: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: .1em;
+}
 
 /**
  * Base Typography
@@ -178,7 +190,6 @@ p {
  * Content
  */
 .introduction,
-.content-navigation,
 .content {
 	padding: 1em;
 	max-width: 50em;
@@ -193,6 +204,10 @@ p {
 
 .content-section:first-child {
 	border-top: none;
+}
+
+.content-section:last-child {
+	border-bottom: none;
 }
 
 .introduction {
@@ -220,6 +235,7 @@ p {
 
 .content-navigation {
 	background: #0057b8;
+	padding: 1em;
 }
 
 .content-navigation a {
@@ -228,6 +244,9 @@ p {
 	font-weight: bold;
 	display: block;
 	padding: .5em;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .content-navigation a:before {
@@ -244,6 +263,7 @@ p {
 	.content-navigation {
 		display: flex;
 		justify-content: center;
+		flex-wrap: wrap;
 	}
 	.content-navigation a {
 		margin-right: 1em;
@@ -252,4 +272,17 @@ p {
 
 iframe {
 	max-width: 100%;
+}
+
+.content-section:target h3 {
+	color: #bd0000;
+	transition: .2s color ease-in-out;
+}
+
+.page-footer {
+	width: 100%;
+	background: #0057b8;
+	color: #fff;
+	text-align: center;
+	padding: 1em;
 }
